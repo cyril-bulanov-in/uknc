@@ -2,6 +2,8 @@
 
 # UKNC Web (Электроника МС 0511)
 
+[![CI / Tests](https://github.com/ТВОЙ_АККАУНТ/uknc/actions/workflows/basic-ci.yml/badge.svg)](https://github.com/ТВОЙ_АККАУНТ/uknc/actions/workflows/basic-ci.yml)
+
 A native browser-based recreation of the classic Soviet educational computer ecosystem — Elektronika UKNC (Электроника МС 0511) and BK series. 
 
 Unlike traditional hardware emulators that require ROM images and complex setups, this project rebuilds the classic OS (RT-11) terminal and legendary retro games (like Treasure/Клад, Helicopter/Вертолет, and Oregon Trail) directly in TypeScript and HTML5 Canvas.
