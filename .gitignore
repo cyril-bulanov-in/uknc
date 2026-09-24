@@ -1,18 +1,24 @@
-# Зависимости
-node_modules/
-
-# Папка со скомпилированным билдом (генерируется автоматически)
-dist/
-dist-ssr/
-
-# Локальные логи и настройки
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.env
-.env.local
+pnpm-debug.log*
+lerna-debug.log*
 
-# Системные файлы macOS
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-.AppleDouble
-.LSOverride
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

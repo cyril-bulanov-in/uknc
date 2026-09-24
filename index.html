@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>УКНЦ / RT-11 Web</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      body {
+        margin: 0;
+        background-color: #000; 
+        overflow: hidden;
+      }
+      #hidden-input {
+        position: absolute;
+        opacity: 0;
+        top: -1000px;
+      }
+      canvas {
+        background-color: #1a1a1a; 
+        display: block;
+        -webkit-font-smoothing: none;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeSpeed;
+        image-rendering: pixelated;
+      }
+      /* Невидимый слой поверх канваса для выделения текста */
+      #selection-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 10px;
+        box-sizing: border-box;
+        color: transparent;
+        font-family: Monaco, "Courier New", monospace;
+        font-size: 12px;
+        line-height: 16px;
+        white-space: pre;
+        pointer-events: auto;
+        z-index: 10;
+      }
+      #selection-layer::selection {
+        background: rgba(255, 255, 255, 0.3);
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="hidden-input" autocomplete="off" autocorrect="off" spellcheck="false" />
+    <canvas id="uknc-screen"></canvas>
+    <div id="selection-layer"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

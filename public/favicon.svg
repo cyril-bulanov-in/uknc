@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Корпус/экран монитора -->
+  <rect width="64" height="64" rx="12" fill="#1a1a1a"/>
+  
+  <!-- Точка от RT-11 -->
+  <text x="12" y="44" font-family="monospace" font-size="28" fill="#DBDBDB" font-weight="bold">.</text>
+  
+  <!-- Курсор (блок) -->
+  <rect x="28" y="22" width="18" height="26" fill="#DBDBDB"/>
+  
+  <!-- Сканлайны для ЭЛТ-эффекта -->
+  <line x1="0" y1="16" x2="64" y2="16" stroke="#000" stroke-width="2" opacity="0.3"/>
+  <line x1="0" y1="32" x2="64" y2="32" stroke="#000" stroke-width="2" opacity="0.3"/>
+  <line x1="0" y1="48" x2="64" y2="48" stroke="#000" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Легкий блик на стекле -->
+  <rect x="4" y="4" width="56" height="24" rx="8" fill="#ffffff" opacity="0.05"/>
+</svg>
