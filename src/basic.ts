@@ -276,7 +276,7 @@ export class BasicInterpreter implements RunnableApp {
     parsed = parsed.replace(/\bOR\b/gi, '||');
     parsed = parsed.replace(/\bNOT\b/gi, '!');
     
-    parsed = parsed.replace(/([A-Z_][A-Z0-9_$]*)\s*\(([^)]+)\)/gi, (match, p1, p2) => {
+    parsed = parsed.replace(/([A-Z_][A-Z0-9_$]*)\s*\(([^)]+)\)/gi, (_, p1, p2) => {
       const name = p1.toUpperCase();
       const v = this.vars.get(name);
       if (v && v.isArray) return `${name}[${p2}]`;
